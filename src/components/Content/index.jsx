@@ -1,31 +1,15 @@
 import React from "react";
 import styles from "./Content.module.css";
 
-export default function Content() {
+export default function Content({setView}) {
 
 
     const handleCreateRotine = () => {
-
+      setView(true)
     }
 
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        <div>
-          <h1>
-            Bem vindo ao <span>My Batter Day</span>
-          </h1>
-          <h3>
-            Vamos criar uma rotina baseado nos seus gostos. <a>Saiba Mais</a>
-          </h3>
-        </div>
-      </div>
-
-      <div className={styles.anunciosContainer}>
-        <div className={styles.anuncioWeb}>
-            Anuncio
-        </div>
-      </div>
       
       <div className={styles.contentForm}>
         <div className={styles.form}>
